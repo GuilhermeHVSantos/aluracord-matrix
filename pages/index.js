@@ -46,8 +46,8 @@ export default function PaginaInicial() {
       <Box
         styleSheet={{
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          backgroundColor: appConfig.theme.colors.primary[600],
-          backgroundImage: 'url(https://c4.wallpaperflare.com/wallpaper/874/768/55/dota-dota-2-video-games-the-international-ti10-hd-wallpaper-preview.jpg)',
+
+          backgroundImage: 'url(https://cdna.artstation.com/p/assets/images/images/011/800/930/large/alex-lutai-roshpit-portf-final-1.jpg?1531473724)',
           backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
         }}
       >
@@ -71,7 +71,6 @@ export default function PaginaInicial() {
             as="form"
             onSubmit={function (infosDoEvento){
               infosDoEvento.preventDefault();
-              console.log('Alguem submeteu o form');
               roteamento.push(`/chat?username=${username}`)
               //window.location.href = '/chat'
             }}
@@ -91,7 +90,6 @@ export default function PaginaInicial() {
             <TextField
                           value={username}
               onChange={ function (event){
-                console.log('usuario digitou', event.target.value);
                 
                 const valor = event.target.value;
                 //Settando o valor da variavel atras do react
